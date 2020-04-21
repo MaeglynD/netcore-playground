@@ -160,6 +160,25 @@ namespace test
 			}
 
 			// Console.WriteLine(decompress("2[a5[c]4[b2[u]]]3[x]"));
+
+			long smallest_number(int n)
+			{
+				long iteration = 1, a = 1;
+
+				while(iteration <= n)
+				{
+					int i = 1;
+					while(a % iteration != 0)
+					{
+						if (a * i % iteration == 0) a *= i;
+						i++;
+					}
+					iteration++;
+				}
+				return a;
+			}
+			
+			// Console.WriteLine(smallest_number(10));
 		}
     }
 }
