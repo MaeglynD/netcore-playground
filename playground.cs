@@ -179,6 +179,38 @@ namespace test
 			}
 			
 			// Console.WriteLine(smallest_number(10));
+
+			bool can_traverse(int[][] playing_field)
+			{
+				int col_length = playing_field.Length;
+
+				int[] columns = new int[playing_field[0].Length]
+					.Select((x, i) => new int[col_length]
+						.Select((y, c) => playing_field[c][i])
+						.ToList()
+						.FindIndex(y => y == 1))
+					.Select(x => x == -1 ? col_length : x)
+					.ToArray();
+				
+				for (int i = 0; i < columns.Length - 1; i++)
+				{
+					int x = columns[i];
+					if (!Array.Exists(new int[] { x, x + 1, x - 1 }, e => e == columns[i + 1])) return false;
+				}
+
+				return true;
+			}
+
+			// Console.WriteLine(can_traverse(
+			// 	new int[][]
+			// 	{
+			// 		new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0 },
+			// 		new int[] {0, 0, 0, 1, 0, 0, 0, 0, 1 },
+			// 		new int[] {0, 0, 1, 1, 1, 0, 1, 0, 1 },
+			// 		new int[] {0, 1, 1, 1, 1, 1, 1, 1, 1 }
+			// 	}
+			// ));
+
 		}
     }
 }
