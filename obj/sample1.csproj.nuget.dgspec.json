@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\md\\Desktop\\software tests\\sample1\\sample1.csproj": {}
+    "C:\\Users\\md\\desktop\\software tests\\sample1\\netcore-playground\\sample1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\md\\Desktop\\software tests\\sample1\\sample1.csproj": {
+    "C:\\Users\\md\\desktop\\software tests\\sample1\\netcore-playground\\sample1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\md\\Desktop\\software tests\\sample1\\sample1.csproj",
+        "projectUniqueName": "C:\\Users\\md\\desktop\\software tests\\sample1\\netcore-playground\\sample1.csproj",
         "projectName": "sample1",
-        "projectPath": "C:\\Users\\md\\Desktop\\software tests\\sample1\\sample1.csproj",
+        "projectPath": "C:\\Users\\md\\desktop\\software tests\\sample1\\netcore-playground\\sample1.csproj",
         "packagesPath": "C:\\Users\\md\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\md\\Desktop\\software tests\\sample1\\obj\\",
+        "outputPath": "C:\\Users\\md\\desktop\\software tests\\sample1\\netcore-playground\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -58,7 +58,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
