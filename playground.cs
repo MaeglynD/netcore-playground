@@ -135,7 +135,7 @@ namespace test
                     for (int i = ind; i < str.Length; i++)
                     {
                         if (str[i] == ']')
-                        {
+						{
 							if (open_count > 0)
 							{
 								open_count--;
@@ -144,7 +144,7 @@ namespace test
 							{
 								return i - ind;
 							}
-                        };
+						};
 
                         if (str[i] == '[') open_count++;
 
