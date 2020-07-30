@@ -136,7 +136,7 @@ namespace test
                     {
                         if (str[i] == ']')
                         {
-                            if (open_count > 0)
+							if (open_count > 0)
 							{
 								open_count--;
 							}
